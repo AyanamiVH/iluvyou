@@ -14,8 +14,9 @@ function mostrarLinea() {
     p.textContent = frases[indice];
     indice++;
   } else {
-    p.textContent = "Te amo 💖";
+    p.textContent = "Te amo ♡";
     indice = 0;
   }
 }
+
 
