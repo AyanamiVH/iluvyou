@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffdf7;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(#ffdde1, #ee9ca7);
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+
+.seccion {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.momento {
+  margin: 30px auto;
+  max-width: 500px;
+  transition: box-shadow 0.4s ease;
+}
+
+.momento img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+.momento:hover img{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.historia {
+  background: #fafafa;
+}
+
+.carta-interactiva {
+  border: 2px dashed #d94f4f;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+  cursor: pointer;
+  font-style: italic;
+  background: #fff6f6;
+  border-radius: 10px;
+}
+
+footer {
+  background: #d94f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

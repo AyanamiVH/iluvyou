@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Un Año Contigo</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header id="header">
+    <h1>Un Año Contigo</h1>
+    <p>Un recorrido por los momentos que dibujamos juntos ♡</p>
+    <a href="historia.html" class="boton">Empezar el recorrido</a>
+  </header>
+  <footer id="footer">
+    <p>Gracias por este año lleno de amor, cariño y momentos lindos ♡</p>
+  </footer>
+  <script>
+  document.querySelectorAll('.boton').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Evita que se redireccione de inmediato
+      document.getElementById('header').classList.add('contraido');
+      document.getElementById('footer').classList.add('expandido');
+
+      // Espera a que termine la animación antes de redirigir
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 1300); // igual al tiempo de transition (0.5s)
+    });
+  });
+</script>
+</body>
+</html>
